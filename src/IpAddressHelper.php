@@ -2591,7 +2591,7 @@ class IpAddressHelper extends IpHelper
             $rows = explode("\n", $output);
             foreach ($rows as $row) {
                 $row = trim($row);
-                if (($row != '') && ($row{0} != '#') && ($row{0} != '%')) {
+                if (($row != '') && ($row[0] != '#') && ($row[0] != '%')) {
                     $result .= $row."\n";
                 }
             }
